@@ -1,7 +1,7 @@
 {
-  "name": "@rahul8864/material",
+  "name": "@rahul8864/material-ui",
   "homepage": "https://material-tailwind.com",
-  "version": "2.1.9",
+  "version": "1.0.1",
   "description": "@material-tailwind/react is an easy-to-use components library for ReactJS & Tailwind CSS inspired by Material Design.",
   "repository": "https://github.com/creativetimofficial/material-tailwind",
   "license": "MIT",
@@ -14,7 +14,7 @@
     "build:cjs": "swc ./src -d ./dist --only ./src/**/*.ts --config-file .swcrc",
     "build:dts": "tsc --declaration --declarationMap --emitDeclarationOnly",
     "copy": "cp ./package.json ./dist && cp ./README.md ./dist && cp ./LICENSE ./dist",
-    "build": "pnpm build:cjs && pnpm build:dts && pnpm copy",
+    "build": "npm run build:cjs && npm run build:dts && npm run copy",
     "lint:check": "eslint . --ext js,jsx,ts,tsx --max-warnings=0 --config .eslintrc.json --no-eslintrc",
     "prettier:check": "prettier -c ."
   },
