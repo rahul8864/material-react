@@ -127,12 +127,19 @@ export const MenuCore = React.forwardRef<
       whileElementsMounted: autoUpdate,
     });
 
+    interface ExtendedSafePolygonOptions {
+      restMs: number;
+      blockPointerEvents: boolean;
+    }
+    
+    const options: ExtendedSafePolygonOptions = {
+      restMs: 25,
+      blockPointerEvents: true
+    };
+
     const { getReferenceProps, getFloatingProps, getItemProps } = useInteractions([
       useHover(context, {
-        handleClose: safePolygon({
-          restMs: 25,
-          blockPointerEvents: true,
-        }),
+        handleClose: safePolygon(options),
         enabled: allowHover || (nested && internalAllowHover),
         delay: { open: 75 },
       }),

@@ -89,6 +89,7 @@ export const carousel: CarouselStylesType = {
     transition: {
       type: "tween",
       duration: 0.5,
+      keyframes: []
     },
     loop: false,
     className: "",

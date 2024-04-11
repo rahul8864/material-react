@@ -95,7 +95,7 @@ const Popover = ({
     onOpenChange: handler,
     middleware: [fuiOffset(offset), flip(), shift()],
     placement,
-  });
+  }) as unknown as any;
 
   const id = useId();
   const labelId = `${id}-label`;

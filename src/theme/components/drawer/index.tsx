@@ -42,6 +42,7 @@ export const drawer: DrawerStylesType = {
     transition: {
       type: "tween",
       duration: 0.3,
+      keyframes: []
     },
   },
   styles: {

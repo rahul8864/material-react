@@ -125,7 +125,7 @@ const Dialog = React.forwardRef<HTMLDivElement, DialogProps>(
     const { floating, context } = useFloating({
       open,
       onOpenChange: handler,
-    });
+    }) as unknown as any;
 
     const id = useId();
     const labelId = `${id}-label`;

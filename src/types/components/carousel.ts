@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import type { AnimationOptions } from "framer-motion";
+import type { ValueAnimationOptions } from "framer-motion";
 
 /**
  * This file contains the types and prop-types for Carousel component.
@@ -26,7 +26,7 @@ export type navigation = (args: {
 }) => React.ReactNode | void;
 export type autoplay = boolean;
 export type autoplayDelay = number;
-export type transition = AnimationOptions<any>;
+export type transition = ValueAnimationOptions<any>;
 export type loop = boolean;
 export type className = string;
 export type slideRef = React.Ref<HTMLDivElement>;

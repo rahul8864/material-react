@@ -125,7 +125,7 @@ export const Tooltip = React.forwardRef<HTMLDivElement, TooltipProps>(
       onOpenChange: handler,
       middleware: [fuiOffset(offset), flip(), shift()],
       placement,
-    });
+    }) as unknown as any;
 
     const { getReferenceProps, getFloatingProps } = useInteractions([
       useClick(context, {

@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import { dismissType, propTypesDismissType } from "../generic";
-import type { AnimationOptions } from "framer-motion";
+import type { ValueAnimationOptions } from "framer-motion";
 
 /**
  * This file contains the types and prop-types for Drawer component.
@@ -16,7 +16,7 @@ export type overlayProps = React.ComponentProps<"div">;
 export type className = string;
 export type onClose = () => void;
 export type dismiss = dismissType;
-export type transition = AnimationOptions<any>;
+export type transition = ValueAnimationOptions<any>;
 export type overlayRef = React.Ref<HTMLDivElement>;
 
 // javascript prop-types
