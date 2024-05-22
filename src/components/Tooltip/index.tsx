@@ -150,6 +150,7 @@ export const Tooltip = React.forwardRef<HTMLDivElement, TooltipProps>(
     const NewAnimatePresence: React.FC<NewAnimatePresenceProps> = AnimatePresence;
 
     // 7. return
+    console.log(open, content)
     return (
       <>
         {typeof children === "string" ? (
@@ -171,7 +172,7 @@ export const Tooltip = React.forwardRef<HTMLDivElement, TooltipProps>(
         <LazyMotion features={domAnimation}>
           <FloatingPortal>
             <NewAnimatePresence>
-              {open && (
+              {true && (
                 <m.div
                   {...getFloatingProps({
                     ...rest,

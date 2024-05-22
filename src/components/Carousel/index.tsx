@@ -112,7 +112,7 @@ export const Carousel = React.forwardRef<HTMLDivElement, CarouselProps>(
     React.useEffect(() => {
       const controls = animate(x, calculateNewX(), transition);
 
-      return controls.stop;
+      return controls.stop();
     }, [calculateNewX, index, x, transition]);
 
     React.useEffect(() => {
